@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Vous etes actuellement dans le repertoire: $(pwd)"
+
+echo "Dans quel repertoire voulez-vous creer le projet ?"
+
+read -p "nomDuRepertoire"
+
+mkdir "$nomDuRepertoire"
+
+
+mkdir -p  .browserslistrc .well-known LICENCE assets img pages scss docs .editorconfig touch 403.html 404.html README.md favicon.png index.html package-lock.json package.json robots.txt sitemap.xml mkdir assets\CSS assets\fonts assets\js img\icons scss\abstracts scss\base scss\components scss\layouts scss\pages scss\.utilities docs\architecture docs\diagrams docs\security touch .wellknown\security.txt img\logo-110x110.webp img\logo-160x160.webp img\logo-200x200 .webp img\logo-800x800.webp img\logo-96x96.webp pages\about.html pages\article-details.html pages\blog.html pages\contact.html pages\cookies.html pages\faq.html pages\legal.html pages\portfolio.html pages\privacy-policy.html pages\project-details.html pages\search-results.html pages\service-details.html pages\services.html pages\team.html pages\terms.html pages\testimonials.html scss\style.scss docs\workflow.md docs\README.md touch assets\CSS\style.css assets\CSS\style.css.map assets\fonts\NotoSans-VariableFont.woff2 assets\fonts\OFL.txt assets\fonts\README.txt assets\js\app.js scss\abstracts\_fonctions.scss scss\abstracts\_index.scss scss\abstracts\_mixins.scss scss\abstracts\_variables.scss scss\base\_fonts.scss scss\base\_global.scss scss\base\_index.scss scss\base\_reset.scss scss\base\_root.scss scss\base\_typography.scss scss\components\_button.scss scss\components\_card.scss scss\components\_icons.scss scss\components\_index.scss scss\layout\_container.scss scss\layout\_footer.scss scss\layout\_header.scss scss\layout\_index.scss scss\pages\_about.scss scss\pages\_home.scss scss\pages\_index.scss scss\utilities\_accessibility.scss scss\utilities\_alignment.scss scss\utilities\_display.scss scss\utilities\_flexbox.scss scss\utilities\_grid.scss scss\utilities\_index.scss scss\utilities\_spacing.scss scss\utilities\_visibility.scss docs\architecture\overview.md   
