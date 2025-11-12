@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Création du fichier avec l'utilisateur
 
 echo "Vous etes actuellement dans le repertoire: $(pwd)"
@@ -11,7 +10,7 @@ read -p "Entrez le nom du projet : " nomProjet
 
 mkdir -p "$cheminCreation/$nomProjet"
 
-cd "$cheminCreation/$nomProjet" || {echo "Erreur: Impossible d'acceder au dossier.";exit 1;}
+cd "$cheminCreation/$nomProjet" || { echo "Erreur: Impossible d'acceder au dossier.";exit 1; }
 
 
 # Creation du skeleton
