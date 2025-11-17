@@ -1,26 +1,33 @@
+::utilisa&tion "@echo off", "@" permet de ne pas afficher la commande qui suit, et echo off va rendre invisibles les commandes suivantes qui vont être éxécutées, seuls les messages désirés à l'aide de la commande "echo" ou "set" seront affichés.
+
 @echo off
-
-:: permet de garder l'environnement propre.
-
-setlocal 
-
 
 :: Création du fichier avec l'utilisateur
 
 echo "Vous etes actuellement dans le repertoire: "
 
+:: utilisation de la variable avec "%%", ici, la variable "CD" va afficher le chemin sur lequel se trouve la console.
+
 echo %CD%
+
+:: la commande "set -p" va permettre l'interaction avec l'utilisateur en affichant un texte et en stockant sa réponse dans une variable définie.
 
 set /p cheminCreation="Dans quel repertoire voulez-vous creer le projet ? "
 
 set /p nomProjet="Entrez le nom du projet :"
 
+:: la commande "mkdir" créé les répertoires et sous dossier dans le chemin demandé, ici, on utilise les variables définies préalablement.
+
 mkdir "%cheminCreation%\%nomProjet%"
+
+:: utilisation de la commande "cd" pour se prcer sur le chemin créé à l'aide des variables.
 
 cd "%cheminCreation%\%nomProjet%"
 
 
 :: Creation du skeleton
+
+:: utilisation de la commande "mkdir" déjà vue et de la commande "echo. >" pour créer des fichiers vides. L'ensemble est réalisant en respectant les chemins donné dans le cahier des charges.
 
 mkdir .well-known 
 mkdir assets\css 
